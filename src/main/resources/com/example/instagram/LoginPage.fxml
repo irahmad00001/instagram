@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.instagram.LoginController">
+   <children>
+      <Hyperlink text="تنظیمات">
+         <VBox.margin>
+            <Insets left="400.0" />
+         </VBox.margin>
+      </Hyperlink>
+      <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="از شما تقاضا می شود نظرات خود را از طریق لینک های زیر اعلام کنید." />
+      <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="https://eitaa.com/DevAhmad00001" />
+      <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="https://t.me/devAhmad00001" />
+      <Text fx:id="welcomeTXT" strokeType="OUTSIDE" strokeWidth="0.0" text="خوش آمدید">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="40.0" />
+         </VBox.margin>
+      </Text>
+      <Text fx:id="errorTXT" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="نام کاربری یا رمز عبور اشتباه است." visible="false" />
+      <Text fx:id="usernameTXT" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="نام کاربری : " textAlignment="JUSTIFY">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="350.0" />
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="usernameFLD" alignment="CENTER" onAction="#loginEvent" prefHeight="54.0" prefWidth="293.0" promptText="نام کاربری خود را وارد کنید.">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <VBox.margin>
+            <Insets bottom="3.0" left="70.0" right="70.0" top="3.0" />
+         </VBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Text fx:id="passTXT" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="رمز عبور :" textAlignment="JUSTIFY">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="350.0" />
+         </VBox.margin>
+      </Text>
+      <PasswordField fx:id="passFLD" alignment="CENTER" onAction="#loginEvent" prefHeight="54.0" prefWidth="316.0" promptText="رمز عبور خود را وارد کنید.">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <VBox.margin>
+            <Insets bottom="3.0" left="70.0" right="70.0" top="3.0" />
+         </VBox.margin>
+      </PasswordField>
+      <CheckBox fx:id="rememberCKB" mnemonicParsing="false" onAction="#loginEvent" text="مرا به خاطر بسپار">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <VBox.margin>
+            <Insets right="200.0" top="3.0" />
+         </VBox.margin>
+      </CheckBox>
+      <Button fx:id="loginBUT" mnemonicParsing="false" onAction="#loginEvent" prefHeight="48.0" prefWidth="316.0" text="ورود" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <VBox.margin>
+            <Insets bottom="3.0" top="6.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="signupBUT" mnemonicParsing="false" onAction="#signupEvent" prefHeight="48.0" prefWidth="316.0" text="ثبت نام" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="mainHBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.instagram.MainPageController">
+   <children>
+      <ScrollPane fx:id="scrollPaneV" prefHeight="631.0" prefWidth="615.0">
+         <content>
+            <VBox fx:id="vboxHS" prefWidth="575.0" />
+         </content></ScrollPane>
+      <VBox fx:id="vboxH" alignment="TOP_CENTER" prefHeight="631.0" prefWidth="136.0" spacing="5.0">
+         <children>
+            <Button fx:id="button5HV1" mnemonicParsing="false" onAction="#button5HV1Event" prefHeight="25.0" prefWidth="56.0" text="Refresh" />
+            <ImageView fx:id="imageViewHV" fitHeight="75.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="textHV" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+            <Button fx:id="button1HV" mnemonicParsing="false" onAction="#button1HVEvent" prefHeight="25.0" prefWidth="127.0" text="خروج از حساب کاربری" />
+            <Button fx:id="button2HV" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="مشخصات کاربری" />
+            <Button fx:id="button3HV" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="پست های من" />
+            <Button fx:id="button4HV" mnemonicParsing="false" onAction="#button4HVEvent" prefHeight="25.0" prefWidth="127.0" text="پست جدید" />
+            <RadioButton fx:id="radioButton1HV" mnemonicParsing="false" text="بر اساس LIKE" />
+            <RadioButton fx:id="radioButton2HV" mnemonicParsing="false" text="بر اساس جدیدترین" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
