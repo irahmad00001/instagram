@@ -11,7 +11,7 @@ public class Database {
 
     public static void makeConnection(){
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://62.3.41.49/h210327_instagram" , "h210327_software" , "Ea2TgRX9");
+            Connection connection = DriverManager.getConnection("" , "" , "");
             statement = connection.createStatement();
             System.out.println(connection.getNetworkTimeout());
         }
